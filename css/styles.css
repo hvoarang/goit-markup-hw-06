@@ -151,8 +151,7 @@ img {
   border-radius: 2px;
   opacity: 1;
   transform: scaleX(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: transform var(--normal-duration) var(--normal-timing-function)
 }
 
 .menu__link:hover::after,
@@ -337,8 +336,8 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color 0.25s ease-in-out;
-  border-radius: 50%;
+  transition: background-color var(--normal-duration) var(--normal-timing-function), fill var(--normal-duration) var(--normal-timing-function);
+
 }
 
 
@@ -358,7 +357,7 @@ img {
 
 .social__icon {
   fill: var(--icon-fill);
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--normal-duration) var(--normal-timing-function);
 }
 
 .team__name {
