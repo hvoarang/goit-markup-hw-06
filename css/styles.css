@@ -156,7 +156,7 @@ img {
 
 .menu__link:hover::after,
 .menu__link:focus::after,
-.active .menu__link::after {
+.menu__link.active::after {
   transform: scaleX(1);
 }
 
@@ -165,13 +165,13 @@ img {
   justify-content: center;
   align-items: center;
   color: var(--sub-txt-color);
-  transition: color 0.25s ease-in-out;
+  transition: var(--normal-timing-function);
 }
 
 .header__icon {
   margin-right: 10px;
   fill: var(--sub-txt-color);
-  transition: fill 0.25s ease-in-out;
+  transition: var(--normal-timing-function);
 }
 
 .contacts__link:hover,
@@ -221,6 +221,7 @@ img {
   line-height: 1.88;
   cursor: pointer;
   letter-spacing: 0.06em;
+  transition: background-color var(--normal-duration) var(--normal-timing-function);
 }
 
 .btn:hover,
@@ -394,7 +395,7 @@ img {
   cursor: pointer;
   border: 1px solid var(--icon-fill);
   border-radius: 4px;
-  transition: border 0.25s ease-in-out;
+  transition: var(--normal-timing-function);
 }
 
 .clients__item:hover {
@@ -403,7 +404,7 @@ img {
 
 .clients__icon {
   fill: var(--icon-fill);
-  transition: fill 0.25s ease-in-out;
+  transition: fill var(--normal-timing-function);
 }
 
 .clients__item:hover .clients__icon {
@@ -450,14 +451,14 @@ img {
   letter-spacing: 0.03em;
   color: #ffffff;
   margin-bottom: 5px;
-  transition: color 0.25s ease-in-out;
+  transition: var(--normal-timing-function);
 }
 
 .address {
   margin-top: 20px;
 }
 
-.address__item:not(:last-child) {
+.footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -521,7 +522,7 @@ img {
   border-radius: 4px;
   padding: 6px 22px;
   cursor: pointer;
-  transition: color 0.25s, background-color 0.3s, box-shadow 0.3s ease-in-out;
+  transition: color 0.25s, background-color 0.3s, box-shadow var(--normal-timing-function);
 }
 
 .btn__portfolio-link:hover,
@@ -557,7 +558,7 @@ img {
 .portfolio__cards-link {
   display: block;
   color: inherit;
-  transition: box-shadow 0.25s ease-in-out;
+  transition: box-shadow var(--normal-timing-function);
 }
 
 .portfolio__cards-link:hover,
