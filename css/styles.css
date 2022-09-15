@@ -50,6 +50,28 @@ img {
   padding: 94px 0px;
 }
 
+label {
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  letter-spacing: 0.01em;
+  color: var(--sub-txt-color)
+}
+
+input,
+textarea {
+  padding: 8px;
+  font-family: inherit;
+  border-radius: 1px;
+  border-color: var(--sub-txt-color);
+  resize: none;
+}
+
+span {
+  margin-bottom: 4px;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -408,6 +430,7 @@ img {
 }
 
 .clients__item:hover .clients__icon {
+
   fill: var(--primary-color);
 }
 
@@ -626,7 +649,11 @@ img {
   visibility: hidden;
 }
 
+
+
+
 .modal {
+  /* padding: 93px 40px; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -636,6 +663,42 @@ img {
   background-color: var(--background-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+}
+
+
+.modal__content {
+  padding: 40px;
+}
+
+.modal__titel {
+  font-style: inherit;
+  padding: 40px 40px 30 px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.registration__form {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  width: 448px;
+  height: 342px;
+}
+
+.modal__license {
+  display: flex;
+  position: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 425px;
+  height: 24px;
 
 }
 
