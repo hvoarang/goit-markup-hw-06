@@ -670,16 +670,17 @@ input {
 }
 
 .modal__label {
-
   position: relative;
-  display: block;
-
   display: block;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
 
+}
+
+modal__label:last-child {
+  margin-bottom: 0px;
 }
 
 .modal__span {
@@ -722,8 +723,8 @@ input {
   border: 1px solid var(--primary-color);
 }
 
-.modal__place:hover+.callback-icon,
-.modal__place:focus+.callback-icon {
+.modal__place:hover+.modal__svg,
+.modal__place:focus+.modal__svg {
   fill: var(--primary-color);
 }
 
@@ -747,15 +748,14 @@ input {
 }
 
 .form__message {
+  display: block;
   width: 100%;
   height: 120px;
   resize: none;
   padding: 12px 16px;
-
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -843,10 +843,6 @@ input {
 .modal-btn:hover .close-modal,
 .modal-btn:focus .close-modal {
   fill: var(--primary-color);
-}
-
-.subscribe {
-  margin-left: auto;
 }
 
 .modal__link {
