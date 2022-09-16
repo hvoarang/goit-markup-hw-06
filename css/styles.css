@@ -50,23 +50,9 @@ img {
   padding: 94px 0px;
 }
 
-label {
-  font-family: inherit;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 8px;
-  letter-spacing: 0.01em;
-  color: var(--sub-txt-color)
-}
 
-input,
-textarea {
-  padding: 8px;
-  font-family: inherit;
-  border-radius: 1px;
-  border-color: var(--sub-txt-color);
-  resize: none;
-}
+
+
 
 span {
   margin-bottom: 4px;
@@ -653,7 +639,7 @@ span {
 
 
 .modal {
-  /* padding: 93px 40px; */
+  padding: 93px 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -693,14 +679,14 @@ span {
 }
 
 .modal__license {
-  display: flex;
-  position: center;
-  flex-direction: row;
+  padding-top: 20px;
   justify-content: flex-end;
   width: 425px;
   height: 24px;
 
 }
+
+
 
 .modal-btn {
   display: flex;
