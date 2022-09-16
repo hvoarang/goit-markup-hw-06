@@ -447,72 +447,84 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <strong class="modal__titel"
-          >Залиште свої дані, ми вам передзвонимо</strong
-        >
         <button class="modal-btn" data-modal-close>
           <svg class="close-modal" height="11" width="11">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+        <form class="registration__form">
+          <strong class="modal__titel"
+            >Залиште свої дані, ми вам передзвонимо</strong
+          >
+          <div class="form__group" role="group">
+            <label class="modal__label">
+              <span class="modal__span">Ім'я</span>
+              <input
+                class="modal__place"
+                type="text"
+                required
+                maxlength="13"
+                placeholder="Ваше ім'я"
+              />
+              <svg class="modal__svg" width="18" height="18">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </label>
+            <label class="modal__label"
+              ><span class="modal__span">Телефон</span>
+              <input
+                class="modal__place"
+                type="tel"
+                minlength="13"
+                maxlength="13"
+                placeholder="+380 "
+              />
+              <svg class="modal__svg" width="18" height="18">
+                <use href="./images/icons.svg#phone_num"></use>
+              </svg>
+            </label>
+            <label class="modal__label"
+              ><span class="modal__span">Пошта</span>
+              <input
+                class="modal__place"
+                type="email"
+                name="user__name"
+                placeholder="username@email.com"
+              />
+              <svg class="modal__svg" width="18" height="18">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </label>
 
-        <form class="registration__form" name="registration__form">
-          <label>
-            <span>Ім'я</span>
-            <input
-              class="modal__name"
-              type="text"
-              maxlength="13"
-              placeholder="Ваше ім'я"
-            />
-            <svg width="12" height="12">
-              <use href="./images/icons.svg#phone"></use>
-            </svg>
-          </label>
-          <label
-            ><span>Телефон</span>
-            <input
-              class="modal__num"
-              type="tel"
-              minlength="13"
-              maxlength="13"
-              placeholder="+380 "
-            />
-            <svg width="13" height="13">
-              <use href="./images/icons.svg#phone"></use>
-            </svg>
-          </label>
-          <label
-            ><span>Пошта</span>
-            <input
-              class="modal__mail"
-              type="email"
-              placeholder="name@email.com"
-            />
-            <svg width="15" height="12">
-              <use href="./images/icons.svg#phone"></use>
-            </svg>
-          </label>
-          <label>
-            Коментар
-            <textarea
-              name="Коментар"
-              rows="5"
-              placeholder="Введіть текст"
-            ></textarea>
-          </label>
+            <label class="modal__label">
+              <span class="modal__span">Коментар</span>
+              <textarea
+                class="form__message"
+                name="user-message"
+                rows="5"
+                placeholder="Введіть текст"
+              ></textarea>
+            </label>
+          </div>
 
           <label class="modal__license">
-            <input type="checkbox" name="" value="music" checked />
-            Погоджуюся з розсилкою та приймаю
-            <a class="modal__link" href="./index.html">Умови договору</a>
+            <input type="checkbox" class="privacy-checkbox" name="agree" />
+            <svg class="agreement__icons" height="16" width="16">
+              <use
+                class="modal__icon-off"
+                href="./images/icons.svg#off"
+              ></use>
+              <use
+                class="modal__icon-on"
+                href="./images/icons.svg#on"
+              ></use>
+            </svg>
+            <span class="modal__license-txt"
+              >Погоджуюся з розсилкою та приймаю
+              <a href="" class="modal__link">Умови договору</a></span
+            >
           </label>
-          <button type="submit" class="btn">
-            <a href="./index.html">Відправити</a>
-          </button>
-        </form>
-      </div>
-    </div>
+          <button class="btn" type="submit">Відправити</button>
 
     <!-- подключение js -->
     <script src="./js/modal.js"></script>
