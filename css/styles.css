@@ -675,17 +675,17 @@ input {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 
 }
 
-modal__label:last-child {
+.modal__label:last-child {
   margin-bottom: 0px;
 }
 
 .modal__span {
   display: block;
-  font-size: 12px;
+  font-size: 12PX;
   line-height: 1.17;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
